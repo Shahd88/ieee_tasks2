@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact{
+    position: absolute;
+    top: calc(50% - 250px);
+    left: 25%;
+    padding: 30px 30px 60px;
+    background-color: #d8e6f6;
+    background-image: url(../images/big1.jpg);
+    background-size: cover;
+}
+.contact h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: #e8f0f9;
+}
+.contact .container{
+    display: flex;
+    justify-content: space-between;
+}
+.contact .container .form{
+    max-width: 400px;
+}
+.contact .container .form input{
+    width: 300px;
+    height: 45px;
+    margin-bottom:15px ;
+    text-decoration: none;
+    border: 1px solid #027bff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    outline: none;
+}
+button{
+    position: relative;
+    text-decoration: none;
+    border: navajowhite;
+    height: 45px;
+    width: 270px;
+    left: 20px;
+    border-radius:27px;
+    background-color: #027bff;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+@media (max-width: 768px) {
+    .contact{
+        position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            width: 375px;
+            align-items: center;
+            height: 100%;
+            background-image: url(../images/big1.jpg);
+            background-size: cover;
+    }
+    .container .image{
+        display: none;
+    }
+    .container .form{
+        margin-top: 60px;
+    }
+        .container .form button{
+            margin-top: 50px;
+        }
+}
